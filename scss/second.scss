@@ -1,0 +1,159 @@
+    @mixin start {
+       
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+        text-decoration:none;
+        list-style: none; 
+    }
+
+    *{
+        @include start();
+
+        body{
+            width: 100%;
+            height: 100%;
+
+            .flex-container{
+                margin: 15px auto;
+                
+                width: 90%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                background-color: grey;
+                color:white;
+            /*HEADER START*/
+                header{
+                    
+                    background-color:brown;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;  
+                    align-items: center;
+                    figure{
+                         width: 45%;
+                         padding: 10px;
+                    }
+                    .logotipo{
+                        width:8rem;
+                        height: 8rem;
+                    }
+
+                    .menu-list{
+                        width: 65%;
+                        
+                        border-left: 3px solid white;
+                        display: flex;
+                        justify-content: space-around;
+                        .center{text-align: center}
+                        .option-list{
+                            width: 100%;
+                            padding: 15px;
+                            margin-right: 10px;
+                            position: relative;
+                        
+                            &::after{
+                            content: '';
+                            width: 0%;
+                            height: 5px;
+                            background-color: black;
+                            position: absolute;
+                            bottom: 0%;
+                            left: 0%;
+                             
+                            
+                        }   
+                                &:hover:after
+                                {   
+                                   transition:all .5s;
+                                    width: 100%;
+                                }
+                            
+
+
+
+                            &:hover{
+                                color: black;
+                                transition: all .5s;
+                            background:burlywood;
+                            color:brown;
+                        }    
+                        a{
+                         color:white;  
+                        }
+                    }
+
+                    .option-five{
+                        position: relative;
+                        text-align: center;
+                    & .submenu{
+                        text-align: justify;
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }    
+                }
+
+                }
+/*HEADER END*/
+
+/*second flex*/
+
+
+
+/*ASIDE START*/
+
+.aside-left{
+    flex: 1 1 30%;
+    display: flex;
+    height: 100%;
+    background: tan;
+  flex-direction: column;
+   
+
+}
+
+/*ASIDE END*/
+
+
+/*SECTION START*/
+                section{
+                    background-color: aquamarine;
+                flex:1 2 70%;
+                height: 100%;
+                 display: flex;
+                 justify-content: space-around;
+                 align-items: center;
+                 
+                 padding: 15px;
+                    article{
+                        position: relative;
+                        h3{
+                            text-align: center;
+                        }
+                        margin-right: 15px;
+                        p{
+                            position: absolute;
+                            bottom:0;
+                            text-align: justify;
+                        }
+                    }
+                
+                    .images{
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+/*SECTION END*/
+            
+            
+            
+            
+            }
+
+        }
+
+    }

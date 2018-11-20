@@ -1,0 +1,85 @@
+@keyframes colorchange{
+    from{
+        color: aqua;
+    }
+
+    to{
+        color:grey;
+    }
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+     background:linear-gradient(18deg, rgb(58, 58, 168), rgb(203, 228, 228));
+     display: flex;
+     
+}
+
+div{
+    margin-left: 20px;
+    text-align: center;
+}
+.translate{
+    width: 200px;
+    height: 200px;
+    background: rgb(50, 205, 109);
+    color:crimson;
+    transition: 1s;
+    
+}
+
+.translate:hover , .translate > *:hover{
+    transform:translateX(20px);
+    transform:translateY(40px);
+    animation: 3s colorchange 1;
+    
+}
+
+.skew{
+      width: 200px;
+    height: 200px;
+    background-color: azure;
+
+}
+
+.skew:hover{
+     transform: skewX(80deg);
+     transform:skewY(30deg);
+         transition: 1.5s;
+}
+
+.rotate-y{
+      width: 200px;
+    height: 200px;
+    background-color: bisque;
+    transition: 1.5s;
+}
+
+.rotate-y:hover{
+
+    transform: rotate(20deg);
+    transform-origin: 4% , 20%
+    
+}
+
+.rotate-x{
+      width: 200px;
+    height: 200px;
+    background-color: cornsilk;
+    transition: 1s;
+}
+.rotate-x:hover{
+    transform:rotateX(360deg);
+}
+.scale{
+      width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    transition: 1.2s;
+}
+
+.scale:hover{
+    transform:scale(2, 5);
+   
+}

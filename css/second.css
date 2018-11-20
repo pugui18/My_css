@@ -1,0 +1,89 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+  * body {
+    width: 100%;
+    height: 100%; }
+    * body .flex-container {
+      margin: 15px auto;
+      width: 90%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: grey;
+      color: white;
+      /*HEADER START*/
+      /*HEADER END*/
+      /*second flex*/
+      /*ASIDE START*/
+      /*ASIDE END*/
+      /*SECTION START*/
+      /*SECTION END*/ }
+      * body .flex-container header {
+        background-color: brown;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        * body .flex-container header figure {
+          width: 45%;
+          padding: 10px; }
+        * body .flex-container header .logotipo {
+          width: 8rem;
+          height: 8rem; }
+        * body .flex-container header .menu-list {
+          width: 65%;
+          border-left: 3px solid white;
+          display: flex;
+          justify-content: space-around; }
+          * body .flex-container header .menu-list .center {
+            text-align: center; }
+          * body .flex-container header .menu-list .option-list {
+            width: 100%;
+            padding: 15px;
+            margin-right: 10px; }
+            * body .flex-container header .menu-list .option-list:hover {
+              background: burlywood;
+              color: brown; }
+            * body .flex-container header .menu-list .option-list a {
+              color: white; }
+          * body .flex-container header .menu-list .option-five {
+            position: relative;
+            text-align: center; }
+            * body .flex-container header .menu-list .option-five .submenu {
+              text-align: justify;
+              position: absolute;
+              display: flex;
+              flex-direction: column; }
+      * body .flex-container .aside-left {
+        flex: 1 1 30%;
+        display: flex;
+        height: 100%;
+        background: tan;
+        flex-direction: column; }
+      * body .flex-container section {
+        background-color: aquamarine;
+        flex: 1 2 70%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px; }
+        * body .flex-container section article {
+          position: relative;
+          margin-right: 15px; }
+          * body .flex-container section article h3 {
+            text-align: center; }
+          * body .flex-container section article p {
+            position: absolute;
+            bottom: 0;
+            text-align: justify; }
+        * body .flex-container section .images {
+          width: 200px;
+          height: 200px; }
+
+/*# sourceMappingURL=second.css.map */
